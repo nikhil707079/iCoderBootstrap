@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking</title>
+    <link rel="stylesheet" href="bus.css">
+</head>
+
+<body>
+    <div class="booking-container">
+        <h1>Book Your Bus Ticket</h1>
+
+        <form action="https://api.web3forms.com/submit" method="post">
+
+            <input type="hidden" name="access_key" 
+            value="645a8d12-b581-415f-a490-2d9f5652d7f3">
+
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input name='first_name' id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="from">From</label>
+                <input name='first_from' id="from" placeholder="Departure location" required>
+            </div>
+
+            <div class="input-group">
+                <label for="to">To</label>
+                <input name='first_to' id="to" placeholder="Destination location" required>
+            </div>
+
+            <div class="input-group">
+                <label for="date">Date of Journey</label>
+                <input name='first_date'id="date" required>
+            </div>
+
+            <div class="input-group">
+                <label for="time">Time of Journey</label>
+                <input name='first_time'id="time" required>
+            </div>
+
+            <button type="submit">Book Now</button>
+        </form>
+        <div id="successMessage" class="hidden">Ticket Booked Successfully!</div>
+    </div>
+
+    <script src="bus.js"></script>
+</body>
+
+</html>
